@@ -140,6 +140,33 @@
     margin-bottom: 18px;
   }
 
+  .heritage {
+    border-top: 1px solid var(--line);
+  }
+
+  .heritage-photo {
+    height: 270px;
+    background-size: 205%;
+    background-position: 70% 92%;
+  }
+
+  .heritage-copy {
+    padding: 54px 6% 62px;
+  }
+
+  .heritage-copy .eyebrow {
+    position: relative;
+    z-index: 1;
+  }
+
+  .heritage-copy .year {
+    top: -3px;
+    right: 1%;
+    font-size: 116px;
+    line-height: .88;
+    opacity: .36;
+  }
+
   .gallery-dialog-content {
     padding: 27px 17px 17px;
   }
