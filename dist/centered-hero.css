@@ -80,6 +80,8 @@
 @media (min-width: 1600px) {
   .hero.hero-centered { height: 930px; }
   .hero-centered .portrait-stage { height: 650px; }
+  .hero-centered .portrait-image,
+  .hero-centered #portrait-canvas { object-position: center 12%; }
   .hero-centered .portrait-note { bottom: 310px; }
   .hero-centered .gaze-hint { bottom: 490px; }
 }
