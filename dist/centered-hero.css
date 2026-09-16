@@ -1,0 +1,118 @@
+/* Selected concept: a centered invitation above Porfirio's workbench. */
+.header { height: 92px; border-bottom: 0; padding-inline: 7.5%; }
+.desktop-nav { margin-inline: auto; gap: 46px; }
+.header-contact { border-left: 0; }
+.brand-name { font-weight: 600; font-size: 40px; }
+.brand-emblem { width: 65px; height: 70px; background-size: 908px 1362px; background-position: -34px -4px; }
+.hero.hero-centered {
+  height: 873px;
+  min-height: 0;
+  max-height: none;
+  background: var(--paper);
+}
+.hero-centered .hero-copy {
+  position: relative;
+  padding: 4px 24px 0;
+  max-width: none;
+  text-align: center;
+  margin-inline: auto;
+}
+.hero-centered h1 {
+  margin: 0;
+  color: #292d1d;
+  font-family: var(--serif);
+  font-size: clamp(78px, 9vw, 132px);
+  line-height: .69;
+  letter-spacing: -.035em;
+  font-weight: 600;
+}
+.hero-centered .title-line { padding-bottom: 14px; margin-bottom: -14px; }
+.hero-centered .hero-detail { margin-top: 22px; }
+.hero-centered .hero-detail p {
+  max-width: none;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 21px;
+  color: #20221c;
+}
+.hero-centered .hero-detail .button { min-height: 49px; padding: 11px 23px; gap: 10px; font-size: 16px; }
+.hero-centered .portrait-stage {
+  inset: auto 0 0;
+  height: 580px;
+  background: var(--paper);
+  mask-image: linear-gradient(to bottom, transparent, #000 9%);
+}
+.hero-centered .portrait-image,
+.hero-centered #portrait-canvas { object-position: center bottom; }
+@media (max-width: 760px) {
+  .hero-centered .portrait-image { object-position: 52.5% bottom; }
+}
+.hero-centered .portrait-note {
+  top: auto;
+  bottom: 282px;
+  right: auto;
+  left: 65%;
+  padding: 0;
+  border: 0;
+  background: none;
+  backdrop-filter: none;
+  color: #77502c;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+.hero-centered .portrait-note strong { font: 21px var(--serif); margin: 0 0 9px; }
+.hero-centered .portrait-note span { color: #77502c; font: italic 17px var(--serif); }
+.hero-centered .gaze-hint {
+  top: auto;
+  right: auto;
+  left: 24%;
+  bottom: 465px;
+  font: italic 21px/1.15 var(--serif);
+  letter-spacing: 0;
+  text-align: center;
+  transform: rotate(-10deg);
+}
+.hero-centered .motion-toggle { bottom: 17px; right: 3%; background: #f8f5eef0; color: #4f493d; }
+.values { background: var(--olive); color: #fff9ed; border: 0; padding: 26px 6%; }
+.values > div { font-size: 24px; gap: 23px; }
+.values > div + div { border-color: #eee8d780; }
+.values svg { stroke: #f2e9cd; }
+@media (min-width: 1600px) {
+  .hero.hero-centered { height: 930px; }
+  .hero-centered .portrait-stage { height: 650px; }
+  .hero-centered .portrait-note { bottom: 310px; }
+  .hero-centered .gaze-hint { bottom: 490px; }
+}
+@media (max-width: 1100px) {
+  .header { padding-inline: 4%; gap: 22px; }
+  .desktop-nav { gap: 25px; }
+  .hero.hero-centered { height: 780px; }
+  .hero-centered .hero-copy { padding-top: 15px; }
+  .hero-centered h1 { font-size: clamp(74px, 9vw, 99px); }
+  .hero-centered .hero-detail p { font-size: 21px; }
+  .hero-centered .portrait-stage { height: 505px; }
+  .hero-centered .portrait-note { left: 73%; bottom: 255px; }
+  .hero-centered .gaze-hint { left: 14%; bottom: 390px; }
+}
+@media (max-width: 760px) {
+  .header { height: 78px; padding-inline: 5%; }
+  .brand-name { font-size: 29px; }
+  .hero.hero-centered { height: 715px; }
+  .hero-centered .hero-copy { padding: 28px 16px 0; }
+  .hero-centered h1 { font-size: clamp(48px, 10.6vw, 79px); line-height: .96; letter-spacing: -.055em; }
+  .hero-centered .hero-detail { margin-top: 20px; }
+  .hero-centered .hero-detail p { font-size: 17px; max-width: 300px; margin: 0 auto 20px; }
+  .hero-centered .hero-detail .button { font-size: 13px; min-height: 48px; padding: 11px 21px; }
+  .hero-centered .portrait-stage { top: auto; bottom: 0; height: 405px; }
+  .hero-centered .portrait-note { left: 50%; right: auto; top: 280px; bottom: auto; translate: -50% 0; text-align: center; }
+  .hero-centered .portrait-note strong { font-size: 16px; }
+  .hero-centered .portrait-note span { font-size: 13px; }
+  .hero-centered .motion-toggle { left: 5%; right: auto; bottom: 14px; }
+  .values { padding: 21px 2%; }
+  .values > div { font-size: 18px; gap: 8px; }
+  .values svg { width: 28px; height: 28px; }
+}
+@media (max-width: 360px) {
+  .hero-centered h1 { font-size: 43px; }
+  .values > div { font-size: 16px; }
+}

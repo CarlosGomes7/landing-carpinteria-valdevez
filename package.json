@@ -1,0 +1,7 @@
+{
+  "name": "carpinteria-valdevez",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"dev": "node serve.mjs", "check": "node verify.mjs"}
+}

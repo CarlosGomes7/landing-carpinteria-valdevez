@@ -1,0 +1,9 @@
+.git
+.gitignore
+.openai
+output
+tmp
+node_modules
+npm-debug.log*
+Dockerfile
+.dockerignore
